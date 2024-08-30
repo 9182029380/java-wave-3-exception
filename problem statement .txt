@@ -1,0 +1,44 @@
+Scenario:
+A travel agency has a flight booking system that allows customers to book tickets online. The system has certain rules:
+
+A customer can book up to 5 tickets at a time.
+If a customer tries to book more than 5 tickets, the system should throw a custom exception called TicketLimitExceededException.
+Each booking requires the flight number and the customer's details. If the flight number is invalid or does not exist, an InvalidFlightNumberException should be thrown.
+Question:
+Write a Java program that simulates the flight booking process. Implement the custom exceptions TicketLimitExceededException and InvalidFlightNumberException. Write code to handle these exceptions and display appropriate error messages to the user.
+------------------------------------------------------------------------------------------------------
+
+Scenario:
+A hospital's medical record system tracks patient data, including their name, age, and medical history. The system has the following constraints:
+
+The patient's age must be a positive integer. If the age is entered as a negative number or zero, a InvalidAgeException should be thrown.
+The medical history must be provided. If it is left empty, a MedicalHistoryNotFoundException should be thrown.
+Question:
+Write a Java program to input and store patient data. Implement the custom exceptions InvalidAgeException and MedicalHistoryNotFoundException. Ensure that the program handles these exceptions and prompts the user to re-enter the correct data.
+------------------------------------------------------------------------------------------------------------
+
+Scenario:
+A financial application manages purchase orders (PO) and invoices. The system must adhere to the following rules:
+
+The invoice amount should always be a positive number. If the amount is negative or zero, an InvalidInvoiceAmountException should be thrown.
+The purchase order number must be unique and match an existing order. If the PO number does not match any existing records, a PurchaseOrderNotFoundException should be thrown.
+Question:
+Write a Java program that processes invoices based on purchase orders. Implement the custom exceptions InvalidInvoiceAmountException and PurchaseOrderNotFoundException. Ensure that the program handles these exceptions gracefully and logs the errors for audit purposes.
+
+-----------------------------------------------------------------------------------------------------------------
+Scenario:
+A hotel reservation system allows guests to book rooms. The system follows these rules:
+
+The check-in date cannot be in the past. If a past date is provided, a PastDateException should be thrown.
+The room type (e.g., single, double, suite) must be valid. If an invalid room type is selected, a InvalidRoomTypeException should be thrown.
+Question:
+Write a Java program that handles hotel room reservations. Implement the custom exceptions PastDateException and InvalidRoomTypeException. Ensure that the program catches these exceptions and provides the user with appropriate feedback to correct their input.
+------------------------------------------------------------------------------------------------------------------------
+
+Scenario:
+A pharmacy's prescription management system tracks patient prescriptions and the availability of medicines. The system has the following rules:
+
+The prescribed quantity of a medicine must not exceed the available stock. If it does, a OutOfStockException should be thrown.
+If a patient's prescription is missing any essential details (e.g., patient name, medicine name, dosage), a IncompletePrescriptionException should be thrown.
+Question:
+Write a Java program that processes prescriptions and checks against available stock. Implement the custom exceptions OutOfStockException and IncompletePrescriptionException. Handle these exceptions to ensure the system operates smoothly and maintains accurate records.
